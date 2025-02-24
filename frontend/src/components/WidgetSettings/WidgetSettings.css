@@ -1,0 +1,10 @@
+.widget-settings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.widget-settings button {
+    border: 1px solid var(--hover-color);
+}

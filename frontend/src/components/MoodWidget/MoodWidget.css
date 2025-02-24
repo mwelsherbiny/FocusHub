@@ -1,0 +1,35 @@
+.mood-widget {
+    position: relative;
+}
+
+.mood-menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: -400%;
+    z-index: -10;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 0;
+}
+
+.mood-menu.visible {
+    left: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.mood-menu button {
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+    padding: 10px;
+    height: 60px;  
+    width: 50px;
+    background-color: var(--widget-bg-color);
+}
+
+@media screen and (max-width: 700px) {
+    .mood-menu button {
+        height: 44px;
+    }
+}

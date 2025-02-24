@@ -1,0 +1,26 @@
+.widgets {
+    display: flex;
+    flex-direction: column;
+    grid-area: widgets;
+    z-index: 10;
+}
+
+.widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--widget-bg-color);
+    font-size: 0.5rem;
+    width: 30px;
+    padding: 10px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.widget:last-child {
+    border-bottom: 0;
+}
+
+.widget:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}

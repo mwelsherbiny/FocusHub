@@ -1,0 +1,20 @@
+.settings {
+    grid-area: settings;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    gap: 5px;
+    margin-bottom: 0;
+}
+
+.settings-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}

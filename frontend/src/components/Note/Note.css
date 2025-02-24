@@ -1,0 +1,45 @@
+.note {
+    width: 150px;
+    background-color: var(--sticky-note-color);
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    z-index: 20;
+}
+
+.note-controls {
+    display: flex;
+    justify-content: right;
+}
+
+.remove-note-btn {
+    padding: 0;
+    background: transparent;
+}
+
+.remove-note-btn img {
+    padding: 0;
+    background: transparent;
+}
+
+.remove-note-btn:hover {
+    background-color: transparent;
+}
+
+.note-text {
+    background-color: transparent;
+    border: none;
+    height: 150px;
+    text-align: left;
+    vertical-align: top;
+    padding: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.note-text:focus {
+    outline: none;
+}

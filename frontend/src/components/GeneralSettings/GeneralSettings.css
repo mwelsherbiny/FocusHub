@@ -1,0 +1,19 @@
+.general-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings-switches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

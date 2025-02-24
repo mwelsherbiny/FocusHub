@@ -1,0 +1,50 @@
+.timer {
+    grid-area: timer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--widget-font);
+    background-color: var(--primary-color);
+    padding: var(--widget-padding);
+    width: 200px;
+    height: 150px;
+    border-radius: var(--widget-border-radius);
+    gap: 16px;
+    align-self: end;
+    justify-self: left;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.timer h3 {
+    font-size: var(--subheader-font);
+    margin: 0;
+}
+
+.time {
+    font-family: Arial, sans-serif; 
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.timer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-color);
+    width: 100px;
+    height: 30px;
+}
+
+.timer .settings-selector {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .timer {
+        justify-self: center;
+    }
+}

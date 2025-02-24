@@ -1,0 +1,15 @@
+.pomodoro-settings-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pomodoro-settings input {
+    width: 50px;
+    text-align: center;
+}
+
+.pomodoro-settings {
+    width: 300px;
+}

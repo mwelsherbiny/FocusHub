@@ -1,0 +1,165 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    --primary-color: #042A49;
+    --hover-color: #074679;
+    --light-hover-color: #2598F3;
+    --active-color: #010E18;
+    --light-active-color: #0962A9;
+    --secondary-color: white;
+    --modal-color: #0A1221;
+    --brand-color: #2196F3;
+    --light-notification-color: #2E3340;
+    --notification-color: var(--secondary-color);
+    --error-color: #780F07;
+    --light-error-color: #FBBBB7;
+    --warning-color: #786207;
+    --light-warning-color: #FBEDB7;
+    --success-color: #0D7312;
+    --light-success-color: #BAF7BD;
+    --sticky-note-color: #FEFF9C;
+    --subheader-font: 0.75rem;
+    --widget-font: 0.5rem;
+    --widget-padding: 20px;
+    --widget-border-radius: 20px;
+    --widget-bg-color: #040B1E;
+}
+
+body.light {
+    --primary-color: #E7F4FE;
+    --hover-color: #B6DDFB;
+    --secondary-color: #1F2A3F;
+    --light-active-color: #2598F3;
+    --modal-color: #F5F5F5;
+    --brand-color: #2196F3;
+    --widget-bg-color: #E7F4FE;
+    --success-color: #30E839;
+}
+
+.light img {
+    filter: invert(1) brightness(0.3) saturate(500%) hue-rotate(210deg);
+}
+
+.gradient-background {
+    background: linear-gradient(120deg,#86c6f8,#56aff6,#2598f3);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+html {
+    background: linear-gradient(120deg,#86c6f8,#56aff6,#2598f3);
+    animation: gradient-animation 18s ease infinite;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+       box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    min-height: 100vh; 
+}
+
+body {
+    margin: 0 0 20px 0;
+    color: var(--secondary-color);
+}
+
+.app {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "widgets tasks settings"
+                         "widgets tasks timer"
+                         "widgets meditation challanges";
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 150px auto;
+    gap: 20px;
+}
+
+.settings {
+    justify-self: right;
+}
+
+.timer, .tasks, .settings {
+    margin: 20px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.45rem;
+    font-weight: medium;
+    gap: 5px;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+input[type="text"], input[type="number"], input[type="password"] {
+    width: 200px;
+    height: 10px;
+    font-size: var(--widget-font);
+    border: none;
+    background-color: var(--hover-color);
+    color: var(--secondary-color);
+    padding: 10px;
+ }
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 28px;
+        overflow: visible;
+    }
+
+    .app {
+        grid-template-areas: "settings"
+                             "tasks"
+                             "timer"
+                             "meditation"
+                             "challanges";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .settings {
+        justify-self: center;
+        align-self: center;
+    }    
+
+    .widgets {
+        justify-self: left;
+        position: absolute;
+    }
+
+    .widget {
+        padding: 5px;
+    }
+
+    .widget img {
+        width: 24px;
+    }
+}

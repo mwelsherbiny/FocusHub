@@ -1,0 +1,43 @@
+.meditation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    width: 250px;
+    grid-area: meditation;
+    justify-self: right;
+    margin-right: 20px;
+  }
+  
+  .breathing-circle {
+    width: 100px;
+    height: 100px;
+    background-color: var(--brand-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+  }
+  
+  .breathing-text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .breathing-button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--brand-color);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .meditation {
+        justify-self: center;
+        margin-right: 0;
+    }
+  }
