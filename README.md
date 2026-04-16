@@ -16,5 +16,3 @@
 - **Breathing Exercise:** Practice mindfulness with a guided breathing feature to help you relax and refocus.
 
 - **Challenges:** Get fun challenges to refresh your mind and break the monotony.
-
-**Link:** https://backend-falling-cherry-4875.fly.dev/
